@@ -1,0 +1,103 @@
+FORMAT: 1A
+
+# Insight Inc. Burger Bar 
+This API was built to familirize ourselves with apiary.io and 
+
+# Group Burger Bar
+Burger Bar related resources of the **Insight Inc. Burger Bar API**
+
+## Get Meats [/api/index.php/getMeats]
+### List all Meats and their info[GET]
++ Response 200 (application/json)
+
+        [{
+          "name": "1/3 lb. Beef", "price": 2
+        },  {
+          "name": "1/2 lb. Beef", "price": 2.25
+        },  {
+          "name": "2/3 lb. Beef", "price": 2.5
+        },  {
+          "name": "Turkey", "price": 2
+        },  {
+          "name": "Veggie", "price": 2
+        }]
+
+## Get Buns [/api/index.php/getBuns]
+### List all Buns and their info [GET]
++ Response 200 (application/json)
+
+        [{
+          "name": "White", "price": 0.50
+        },  {
+          "name": "Wheat", "price": 0.50
+        },  {
+          "name": "Texas Toast", "price": 0.75
+        }]
+
+## Get Cheeses [/api/index.php/getCheeses]
+### List all Cheeses and their info [GET]
++ Response 200 (application/json)
+
+        [{
+          "name": "Cheddar", "price": 0.35
+        },  {
+          "name": "American", "price": 0.35
+        },  {
+          "name": "Swiss", "price": 0.35
+        }]
+
+## Get Toppings [/api/index.php/getTopppings]
+### List all Toppings and their info [GET]
++ Response 200 (application/json)
+
+        [{
+          "name": "Tomatoes", "price": 0
+        },  {
+          "name": "Lettuce", "price": 0
+        },  {
+          "name": "Onions", "price": 0
+        },  {
+          "name": "Pickles", "price": 0
+        },  {
+          "name": "Bacons", "price": 0
+        },  {
+          "name": "Red Onion", "price": 0
+        },  {
+          "name": "Mushrooms", "price": 0
+        },  {
+          "name": "Jalapenos", "price": 0
+        }]
+
+## Get Sauces [/api/index.php/getSauces]
+### List all Sauces and their info [GET]
++ Response 200 (application/json)
+
+        [{
+          "name": "Ketchup", "price": 0
+        },  {
+          "name": "Mustard", "price": 0
+        },  {
+          "name": "Mayonnaise", "price": 0
+        },  {
+          "name": "BBQ", "price": 0
+        }]
+
+## Get Sides [/api/index.php/getSides]
+### List all Sides and their info [GET]
++ Response 200 (application/json)
+
+        [{
+          "name": "French Fries", "price": 1
+        },  {
+          "name": "Tater Tots", "price": 1
+        },  {
+          "name": "Onion Rings", "price": 1
+        }]
+
+## Create Account [/api/index.php/createUserAccount]
+### Create an account [POST]
++ Response 200 (application/json)
+
+            { "query": "INSERT INTO User (idUser, fName, lName, email, password, ccProvider, ccNumber) VALUES ($newID, '$fName', '$lName', '$email', '$password', '$CCprovider', $CCNumber));" }
+
+
